@@ -21,7 +21,7 @@ import movies.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', gh.views.index)
+    path('', gh.views.index),
     path("search/", movies.views.search, name="search"),
     path(
         "search-wait/<uuid:result_uuid>/", movies.views.search_wait, name="search_wait"
